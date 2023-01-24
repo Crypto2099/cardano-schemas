@@ -24,6 +24,10 @@ ensure that no data tampering has taken place.
 
 Describes a schema format to be used for authenticating a user to a website or service (URI).
 
+The schema definition is available in [authentication.json](authentication.json).
+
+An example of a completed payload is available at [examples/authentication.json](examples/authentication.json).
+
 #### Field Notes ####
 
 **uri**: This should match against the calling server or originating service. For example, only allow a URI of 
