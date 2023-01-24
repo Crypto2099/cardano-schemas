@@ -1,0 +1,9 @@
+{
+  "expiration": "2023-01-24T18:43:38+00:00",
+  "issued": "2023-01-24T18:28:38+00:00",
+  "nonce": "f19793d0-81ce-44db-b8c6-d03f3d90603e",
+  "type": "UserAuthentication",
+  "uri": "https://my.coolsite.org",
+  "userID": "stake1uxekfkqgs4ye2wnf38e7x8uy006wvleq3etu8t35gqmdmnq5v4rks",
+  "version": "1.0.0"
+}
