@@ -22,4 +22,18 @@ ensure that no data tampering has taken place.
 
 ### [Authentication](authentication.json) ###
 
-Describes a schema format to be used for authenticating a user to a website or service.
+Describes a schema format to be used for authenticating a user to a website or service (URI).
+
+#### Field Notes ####
+
+**uri**: This should match against the calling server or originating service. For example, only allow a URI of 
+https://buffybot.io if this matches the originating website where the request was made.
+
+**userID**: This should match against the signing key being used for authentication by the wallet. For example, a user
+being asked to sign with their staking key; the staking key of the wallet in use must match the userID specified in the
+payload.
+
+**expiration**: The signature should be generated and submitted to the server for validation prior to this date-time,
+otherwise the nonce value should be considered invalid and should be regenerated.
+**Note**: After successful validation the server should return an authentication token that may be used by the client
+throughout the duration of the authenticated session.
