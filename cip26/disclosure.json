@@ -1,0 +1,273 @@
+{
+  "$schema": "https://json-schema.org/draft/20220-12/schema",
+  "$id": "https://raw.githubusercontent.com/Crypto2099/cardano-schemas/main/cip26/disclosure.json",
+  "title": "CIP-26 FT Token Disclosure",
+  "description": "A JSON payload used to disclose various information about a fungible Native Asset on Cardano",
+  "type": "object",
+  "properties": {
+    "subject": {
+      "title": "Bech32 Asset ID",
+      "description": "The unique Bech32 identifier for the token",
+      "type": "string",
+      "example": "asset1pmmzqf2akudknt05ealtvcvsy7n6wnc9dd03mf"
+    },
+    "name": {
+      "title": "Asset Name",
+      "description": "The full name of the token",
+      "type": "string",
+      "example": "spacecoins"
+    },
+    "symbol": {
+      "title": "Symbol/Ticker",
+      "description": "The abbreviated (ticker) identifier for the token",
+      "type": "string",
+      "example": "SPACE"
+    },
+    "explore": {
+      "title": "Explore URI",
+      "description": "URI to an explorer page for the token",
+      "type": "uri",
+      "example": "https://cardanoscan.io/token/0ef620255db71b69adf4cf7eb6619027a7a74f05"
+    },
+    "holders": {
+      "title": "Holders URI",
+      "description": "URI to an explorer page with the top holders of the token",
+      "type": "uri",
+      "example": "https://cardanoscan.io/token/0ef620255db71b69adf4cf7eb6619027a7a74f05?tab=topholders"
+    },
+    "distribution_schedule": {
+      "title": "Distribution Schedule",
+      "description": "URI to a document describing the distribution schedule for the token",
+      "type": "uri",
+      "example": "https://faucet.spacecoins.io/"
+    },
+    "supply_api_uri": {
+      "title": "Supply API URI",
+      "description": "The base URI to an API that should serve supply numbers only as plain numbers",
+      "type": "uri",
+      "example": "https://oracle.spacecoins.io/"
+    },
+    "circulating_supply": {
+      "title": "Circulating Supply",
+      "description": "The amount currently in public circulation",
+      "type": "number",
+      "example": 59895098
+    },
+    "total_supply": {
+      "title": "Total Supply",
+      "description": "The amount minted minus any amount burned",
+      "type": "number",
+      "example": 106631501
+    },
+    "max_supply": {
+      "title": "Max Supply",
+      "description": "The maximum amount that will ever exist",
+      "type": "number",
+      "example": 200000000
+    },
+    "emission": {
+      "title": "Emission Method",
+      "description": "Is the token inflationary or deflationary?",
+      "type": "string",
+      "enum": [
+        "inflationary",
+        "deflationary"
+      ],
+      "example": "inflationary"
+    },
+    "generation_date": {
+      "title": "Generation Date",
+      "description": "The date of original minting of the token",
+      "type": "string",
+      "format": "date-time",
+      "example": "2021-03-02T04:45:42+00:00"
+    },
+    "allocations": {
+      "title": "Allocations",
+      "description": "Description of any allocation wallets holding tokens",
+      "type": "array",
+      "items": {
+        "title": "Allocation Wallet",
+        "description": "Describe a wallet that received an allocation of the tokens",
+        "type": "object",
+        "properties": {
+          "description": {
+            "title": "Wallet Description",
+            "description": "A label for this wallet",
+            "type": "string",
+            "example": "DripDropz.io"
+          },
+          "address": {
+            "title": "Wallet Address",
+            "description": "The on-chain wallet address that received the allocation",
+            "type": "string",
+            "example": "addr1qytu7g3e7pqwt9f4dqlkme9qj80cejr5v0jwugthywvgjyyxn4dgcgtv9swlj6snz3cdx59ru4u7mhrvg5rl50wunllsh5vecp"
+          },
+          "quantity": {
+            "title": "Quantity Received",
+            "description": "The amount of tokens received during the allocation",
+            "type": "number",
+            "example": 1000000
+          },
+          "percentage": {
+            "title": "Percentage of Allocation",
+            "description": "What percentage of total supply is this amount?",
+            "type": "number",
+            "example": 9.37
+          },
+          "owner": {
+            "title": "Wallet Owner",
+            "description": "Represents who currently controls the wallet",
+            "type": "string",
+            "enum": [
+              "Airdrops/Bounty",
+              "Burn",
+              "Ecosystem Incentives",
+              "Exchange Cold Wallet",
+              "Exchange Hot Wallet",
+              "Escrow",
+              "Marketing/Operations",
+              "Masternodes/Staking",
+              "Private Sale Investor",
+              "Public",
+              "Team/Advisors/Contractors",
+              "Treasury",
+              "Liquidity Provisioning"
+            ]
+          },
+          "locked": {
+            "title": "Is Locked?",
+            "description": "Are the tokens locked or unlocked?",
+            "type": "string",
+            "enum": [
+              "locked",
+              "unlocked"
+            ]
+          },
+          "allocation": {
+            "title": "Allocation Type",
+            "description": "The type of the allocation",
+            "type": "string",
+            "enum": [
+              "Private Sale",
+              "Public Sale",
+              "Team Controlled"
+            ]
+          },
+          "future_use": {
+            "title": "Future Use",
+            "description": "The future use intent for these tokens",
+            "type": "string",
+            "enum": [
+              "Airdrops/Bounty",
+              "Burn",
+              "Ecosystem Incentives",
+              "Exchange Cold Wallet",
+              "Exchange Hot Wallet",
+              "Escrow",
+              "Marketing/Operations",
+              "Masternodes/Staking",
+              "Private Sale Investor",
+              "Public",
+              "Team/Advisors/Contractors",
+              "Treasury",
+              "Liquidity Provisioning"
+            ]
+          },
+          "proof": {
+            "title": "Allocation Proof",
+            "description": "URL or explanation with proof of allocation",
+            "type": "string"
+          },
+          "unlock_schedule": {
+            "title": "Unlock Schedule",
+            "description": "If the tokens are locked or otherwise under vesting contract, what is the unlock schedule for them?",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "date": {
+                  "title": "Unlock Date",
+                  "description": "The date that these tokens will unlock",
+                  "type": "string",
+                  "format": "date"
+                },
+                "amount": {
+                  "title": "Amount to Unlock",
+                  "description": "The amount of tokens that will unlock on the specified date",
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "funding": {
+      "title": "Funding Rounds",
+      "description": "Description of any funding rounds conducted by the token team",
+      "type": "array",
+      "items": {
+        "title": "Funding Round",
+        "description": "Provide context to a funding round raise for the token project",
+        "type": "object",
+        "properties": {
+          "date": {
+            "title": "Date of Funding",
+            "description": "The date the funding raise occurred",
+            "type": "string",
+            "format": "date"
+          },
+          "type": {
+            "title": "Type of Raise",
+            "description": "The type of round of funding raise",
+            "type": "string",
+            "example": "Seed Round"
+          },
+          "investor": {
+            "title": "Name of the Investor",
+            "description": "The name of the person or entity who provided the funding",
+            "type": "string",
+            "example": "Project Catalyst"
+          },
+          "price": {
+            "title": "Price (USD)",
+            "description": "The price per token paid, in US Dollars",
+            "type": "number",
+            "example": 0.001
+          },
+          "raised": {
+            "title": "Amount Raised (USD)",
+            "description": "The total amount of funds raised, in US Dollars",
+            "type": "number",
+            "example": 420690.123000
+          },
+          "valuation": {
+            "title": "Project Valuation",
+            "description": "The valuation of the project at the time of the funding round",
+            "type": "number",
+            "example": 420690000.420690
+          },
+          "source": {
+            "title": "Source/Proof/Documentation",
+            "description": "Link to documentation of the funding round",
+            "type": "uri",
+            "example": "https://projectcatalyst.org"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "subject",
+    "name",
+    "symbol",
+    "explore",
+    "holders",
+    "circulating_supply",
+    "total_supply",
+    "emission",
+    "allocation",
+    "funding"
+  ]
+}
