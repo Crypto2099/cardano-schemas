@@ -1,0 +1,76 @@
+{
+  "subject": "asset1pmmzqf2akudknt05ealtvcvsy7n6wnc9dd03mf",
+  "name": "spacecoins",
+  "symbol": "SPACE",
+  "explore": "https://cardanoscan.io/token/0ef620255db71b69adf4cf7eb6619027a7a74f05",
+  "holders": "https://cardanoscan.io/token/0ef620255db71b69adf4cf7eb6619027a7a74f05?tab=topholders",
+  "supply_api_uri": "https://oracle.spacecoins.io",
+  "max_supply": 200000000,
+  "emission": "inflationary",
+  "generation_date": "2021-03-02T04:45:42+00:00",
+  "allocations": [
+    {
+      "description": "spacecoins Fountain",
+      "address": "addr1vyd8rqr3758gs06xl5wkr6l3glr57huv2rqgs8pywnf9euczfg78e",
+      "owner": "Public",
+      "locked": "unlocked",
+      "allocation": "Team Controlled",
+      "future_use": "Public",
+      "proof": "https://cardanoscan.io/address/addr1vyd8rqr3758gs06xl5wkr6l3glr57huv2rqgs8pywnf9euczfg78e"
+    },
+    {
+      "description": "DripDropz.io",
+      "address": "addr1w8vh8ssekk52ye3pt7a2j8upv3qphzmar2sj68353xds9lq5urex7",
+      "owner": "Public",
+      "locked": "unlocked",
+      "allocation": "Team Controlled",
+      "future_use": "Public",
+      "proof": "https://cardanoscan.io/address/addr1w8vh8ssekk52ye3pt7a2j8upv3qphzmar2sj68353xds9lq5urex7"
+    },
+    {
+      "description": "Treasury Allocation #1",
+      "address": "addr1qyzd8mgrcwa3chrcj9n2zhyzkjyf4yvftlxd3y2cggmm0h8t2jh5cpjdxp8tcfjghctm3y3txnflesl556upmr2e8z4sc24zly",
+      "stake_key": "stake1u844ft6vqexnqn4uyeytu9acjg4nf5luc062dwqa34vn32cr4488h",
+      "owner": "Treasury",
+      "locked": "unlocked",
+      "allocation": "Team Controlled",
+      "future_use": "Ecosystem Incentives",
+      "proof": "https://cardanoscan.io/token/d894897411707efa755a76deb66d26dfd50593f2e70863e1661e98a07370616365636f696e73?address=addr1qyzd8mgrcwa3chrcj9n2zhyzkjyf4yvftlxd3y2cggmm0h8t2jh5cpjdxp8tcfjghctm3y3txnflesl556upmr2e8z4sc24zly",
+      "amount": 12000000
+    },
+    {
+      "description": "Treasury Allocation #2",
+      "address": "addr1q96genqg4sr7vwmxvugcp5hedfcunvr6ck7rfpkpv0mfh7c30ld7as46f0vnul745x0cetjuyc0va4wfng7jhle7d6fqs9rz4x",
+      "stake_key": "stake1uyghlklwc2ayhkf70l26r8uv4ewzv8kw6hye50ftlulxaysw8up4t",
+      "owner": "Treasury",
+      "locked": "unlocked",
+      "allocation": "Team Controlled",
+      "future_use": "Ecosystem Incentives",
+      "proof": "https://cardanoscan.io/token/d894897411707efa755a76deb66d26dfd50593f2e70863e1661e98a07370616365636f696e73?address=addr1q96genqg4sr7vwmxvugcp5hedfcunvr6ck7rfpkpv0mfh7c30ld7as46f0vnul745x0cetjuyc0va4wfng7jhle7d6fqs9rz4x",
+      "amount": 12000000
+    },
+    {
+      "description": "Treasury Allocation #3",
+      "address": "addr1qxm9dh5e6wq9ze52l5sy8hr4yugpfxkr3latn3dtyqkadxdnvnvq3p2fj5axnz0nuv0cg7l5ueljprjhcwhrgspkmhxq3nzfxm",
+      "stake_key": "stake1uxekfkqgs4ye2wnf38e7x8uy006wvleq3etu8t35gqmdmnq5v4rks",
+      "owner": "Team/Advisors/Contractors",
+      "locked": "unlocked",
+      "allocation": "Team Controlled",
+      "future_use": "Team/Advisors/Contractors",
+      "proof": "",
+      "amount": 10000000
+    },
+    {
+      "description": "Treasury Allocation #4",
+      "address": "addr1qx2zlfdnnhyrn0x2uvzmzhhlmvqupqk7kf9e7rvg7cy24mck5xef8amcsl229qzp3nmw08qycxpar7zldszu8lkwev3q0enfeq",
+      "stake_key": "stake1uyt2rv5n7aug049zspqceah8nszvrq73lp0kcpwrlm8vkgsdadtv2",
+      "owner": "Team/Advisors/Contractors",
+      "locked": "unlocked",
+      "allocation": "Team Controlled",
+      "future_use": "Team/Advisors/Contractors",
+      "proof": "",
+      "amount": 10000000
+    }
+  ],
+  "funding": []
+}
