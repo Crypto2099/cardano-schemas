@@ -1,0 +1,47 @@
+{
+  "867": {
+    "1": {
+      "1": "d894897411707efa755a76deb66d26dfd50593f2e70863e1661e98a0",
+      "2": [
+        26
+      ],
+      "3": [
+        "Ed25519"
+      ],
+      "4": 8675309,
+      "5": "https://oracle.spacecoins.io/v0/",
+      "6": {
+        "26": {
+          "1": [
+            {
+              "subject": "d894897411707efa755a76deb66d26dfd50593f2e70863e1661e98a07370616365636f696e73",
+              "url": "https://spacecoins.io/",
+              "name": "spacecoins",
+              "ticker": "SPACE",
+              "decimals": 0,
+              "description": "the OG Cardano community token - whatever you do, your did it!",
+              "logo": [
+                "ipfs://",
+                "bafkreib3e5u4am2btduu5s76rdznmqgmmrd4l6xf2vpi4vzldxe25fqapy"
+              ],
+              "disclosure_uri": [
+                "ipfs://",
+                "bafkreibva6x6dwxqksmnozg44vpixja6jlhm2w7ueydkyk4lpxbowdbqly"
+              ],
+              "disclosure_hash": "1033280ed007f18d3a1a3d27adb0080d92dc02ce74b54cdefaf174205a110009"
+            }
+          ]
+        }
+      }
+    },
+    "2": [
+      [
+        "d25ee869f7c34a5c6d68140469f2f8da83b1c0f0a81b6f5b09b5e1012d6c2030",
+        [
+          "38a59fedb45b91790ae32f7c7d0134b24b092a29fdd94cbf89e8fc9ed93d4221",
+          "e3d9a7e01bdec1615b802877cc4bcbe1729e446e8e9f215799b884c1b482c709"
+        ]
+      ]
+    ]
+  }
+}
