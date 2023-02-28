@@ -14,7 +14,10 @@
         "26": {
           "1": [
             {
-              "subject": "d894897411707efa755a76deb66d26dfd50593f2e70863e1661e98a07370616365636f696e73",
+              "subject": [
+                "d894897411707efa755a76deb66d26dfd50593f2e70863e1661e98a0",
+                "7370616365636f696e73"
+              ],
               "url": "https://spacecoins.io/",
               "name": "spacecoins",
               "ticker": "SPACE",
