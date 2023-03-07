@@ -14,24 +14,29 @@
         "26": {
           "1": [
             {
-              "subject": [
+              "0": [
                 "d894897411707efa755a76deb66d26dfd50593f2e70863e1661e98a0",
                 "7370616365636f696e73"
               ],
-              "url": "https://spacecoins.io/",
-              "name": "spacecoins",
-              "ticker": "SPACE",
-              "decimals": 0,
-              "description": "the OG Cardano community token - whatever you do, your did it!",
-              "logo": [
+              "5": [
+                "https://",
+                "spacecoins.io"
+              ],
+              "1": "spacecoins",
+              "2": "SPACE",
+              "4": 0,
+              "3": ["the OG Cardano community token - whatever you do, your did it!"],
+              "6": [
                 "ipfs://",
                 "bafkreib3e5u4am2btduu5s76rdznmqgmmrd4l6xf2vpi4vzldxe25fqapy"
               ],
-              "disclosure_uri": [
-                "ipfs://",
-                "bafkreibva6x6dwxqksmnozg44vpixja6jlhm2w7ueydkyk4lpxbowdbqly"
-              ],
-              "disclosure_hash": "1033280ed007f18d3a1a3d27adb0080d92dc02ce74b54cdefaf174205a110009"
+              "7": [
+                [
+                  "ipfs://",
+                  "bafkreibva6x6dwxqksmnozg44vpixja6jlhm2w7ueydkyk4lpxbowdbqly"
+                ],
+                "3507afe1daf05498d764dce55e8ba41e4acecd5bf42606ac2b8b7dc2eb0c305e"
+              ]
             }
           ]
         }
